@@ -1,0 +1,24 @@
+{
+  "name": "zd",
+  "version": "0.0.0",
+  "description": "Personal CLI project to help me do stuff. Mainly for interacting with APIs I use a lot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node source/main.js"
+  },
+  "bin": {
+    "zd": "./source/main.js"
+  },
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+    "openai": "^4.40.1"
+  },
+  "type": "module",
+  "imports": {
+    "#controllers/*": "./source/controllers/*"
+  }
+}
