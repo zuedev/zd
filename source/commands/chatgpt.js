@@ -15,10 +15,14 @@ export default {
       process.exit(1);
     }
 
-    const output = boxen(chalk.bold("GPT-4: ") + response, {
-      padding: 1,
-      margin: 1,
-    });
+    const output = chalk.green(
+      boxen(response, {
+        title: "ChatGPT (GPT-4)",
+        titleAlignment: "center",
+        padding: 1,
+        margin: 1,
+      })
+    );
 
     console.log(output);
 
